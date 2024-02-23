@@ -9,7 +9,7 @@ export default class LoginPage{
 
     //Methods
     public async load(page:Page){
-        await page.goto(this.url);
+        await page.goto(process.env.QACART_BASEURL+this.url);
     }
 
     public async enterEmailAddress(page:Page,email:string){
