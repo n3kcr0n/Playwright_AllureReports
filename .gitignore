@@ -5,4 +5,4 @@ node_modules/
 /playwright/.cache/
 screenshots/
 allure-results/
-swagLabs.spec.ts-snapshots
+
