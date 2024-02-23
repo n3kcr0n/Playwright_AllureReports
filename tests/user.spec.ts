@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
 import User from "../models/User";
-import { RegistrationPage } from "../page-objects/RegistrationPage";
+import RegistrationPage from "../page-objects/RegistrationPage";
 
 
 //TestData

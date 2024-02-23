@@ -2,7 +2,7 @@ import {Page} from '@playwright/test';
 
 
 
-export class RegistrationPage{
+export default class RegistrationPage{
     //Selectors
     readonly url:string = '/signup';
     readonly firstNameTextBox:string = "input[data-testid='first-name']";
