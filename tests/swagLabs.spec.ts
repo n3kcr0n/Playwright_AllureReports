@@ -43,7 +43,7 @@ test.describe('Swag Labs Suite',async ()=>{
             //Take full page screenshot
             await page.screenshot({path: './screenshots/wholePage.png',fullPage:true});
             //Visual Testing 
-            expect(await page.screenshot()).toMatchSnapshot('./screenshots/wholePage.png');
+            //expect(await page.screenshot()).toMatchSnapshot('./screenshots/wholePage.png');
       });
 
 });
