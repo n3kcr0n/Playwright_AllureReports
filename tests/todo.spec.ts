@@ -1,7 +1,8 @@
 import { test,expect } from "@playwright/test";
 import CreateToDoPage from "../page-objects/createTodoPage";
-import User from "../models/User";
 import RegistrationPage from "../page-objects/RegistrationPage";
+import User from "../models/User";
+
 
 const testUser:User = new User();
 test.describe('Create & Delete To do SUITE',async ()=>{
