@@ -1,6 +1,5 @@
 import { test,expect } from "@playwright/test";
 import CreateToDoPage from "../page-objects/createTodoPage";
-import LoginPage from "../page-objects/loginPage";
 import User from "../models/User";
 import RegistrationPage from "../page-objects/RegistrationPage";
 
