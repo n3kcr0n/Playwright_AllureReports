@@ -1,13 +1,14 @@
 import { test,expect } from "@playwright/test";
 import CreateToDoPage from "../page-objects/createTodoPage";
-import RegistrationPage from "../page-objects/RegistrationPage";
+import QaCartRegistrationPage from "../page-objects/qaRegistrationPage";
 import User from "../models/User";
+
 
 
 const testUser:User = new User();
 test.describe('Create & Delete To do SUITE',async ()=>{
     test('TS01 _Able to create todo on the list',async ({page})=>{
-        const registrationPage = new RegistrationPage();
+        const registrationPage = new QaCartRegistrationPage();
         await registrationPage.load(page);
         await registrationPage.registerUser(
             page,

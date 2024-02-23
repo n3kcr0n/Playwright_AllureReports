@@ -12,16 +12,16 @@ export default class CreateToDoPage{
     readonly noToDoMessage:string = "[data-testid='no-todos']";
 
     //Methods
-    public async load(page:Page){
+    load = async(page:Page)=>{
         await page.goto(process.env.QACART_BASEURL+this.url);
     }
-    public async addTodo(page:Page,todoName:string){
+    addTodo = async (page:Page,todoName:string)=>{
         await page.locator(this.plusIcon).click();
         await page.locator(this.toDoTextBox).fill(todoName);
         await page.locator(this.createTodoBtn).click();
     }
 
-    public async selectTodo(page:Page,name:string){
+    selectTodo = async (page:Page,name:string)=>{
         const items = await page.locator(this.todoItems).count();
         for(let i = 0;i<items;i++){
             if(await page.locator(this.todoItems).nth(i).textContent() == name){
@@ -31,7 +31,7 @@ export default class CreateToDoPage{
         }
     }
 
-    public async deleteTodo(page:Page,name:string){
+    deleteTodo = async(page:Page,name:string)=>{
         const items = await page.locator(this.todoItems).count();
         for(let i = 0;i<items;i++){
             if(await page.locator(this.todoItems).nth(i).textContent() == name){

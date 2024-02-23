@@ -1,6 +1,6 @@
 import {Page} from '@playwright/test';
 
-export default class RegistrationPage{
+export default class QaCartRegistrationPage{
     readonly url:string = '/signup';
     //Methods
     load=async(page:Page)=>{
