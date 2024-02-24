@@ -1,0 +1,5 @@
+201  {
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZDk1ZDg5Nzg5MDkzMDAxNGY2YzQzMiIsImZpcnN0TmFtZSI6IkZyYW56IiwibGFzdE5hbWUiOiJNYW5uLUZyaWVzZW4iLCJpYXQiOjE3MDg3NDQwNzN9.31eZ3qg6mHbj_j8hGd46yQr1tWPQVkup4qmzIHmp1ag",
+    "userID": "65d95d897890930014f6c432",
+    "firstName": "Franz"
+}
