@@ -17,8 +17,8 @@ test.describe('User Registration SUITE',async ()=>{
             testUser.getEmail(),
             testUser.getPassword());
 
-            //saving state 
-        await context.storageState({path: 'qaCartAuth.json'});
+        //saving state 
+        await page.context().storageState({path: 'qaCartAuth.json'});
     });
 });
 

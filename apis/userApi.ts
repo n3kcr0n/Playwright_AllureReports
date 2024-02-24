@@ -2,7 +2,7 @@ import { APIRequestContext, BrowserContext } from "@playwright/test";
 import User from "../models/User";
 
 export default class UserApi{
-    public async signUpUserAPI(request:APIRequestContext,user:User,context:BrowserContext){
+    public async signUpUserAPI(request:APIRequestContext,user:User,context?:BrowserContext){
         const response = await request.post(process.env.QACART_BASEURL+'/api/v1/users/register',{
             data:{
                 email: user.getEmail(),
@@ -23,8 +23,8 @@ export default class UserApi{
         user.setUserID(userID);
 
         //Adding cookie in browser context so the browser know that this user is login
-        /* Usable if the is a state of browser
-        await context.addCookies([
+        // Usable if the is a state of browser
+        await context?.addCookies([
             {
                 name: 'access_token',
                 value: access_token,
@@ -44,7 +44,6 @@ export default class UserApi{
         
        //Print response 
         console.log(responseCode +"  "+ JSON.stringify(responseBody, null, 4));
-        */
         return response;
     }
 

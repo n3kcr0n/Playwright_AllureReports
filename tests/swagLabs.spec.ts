@@ -5,7 +5,8 @@ import CartPage from "../page-objects/swagLabsCartPage";
 import CheckOutInfoPage from "../page-objects/swagLabsCheckoutInfoPage";
 import CheckOutOverViewPage from "../page-objects/swagLabsCheckoutOverviewPage";
 
-//test.describe.configure({ mode: 'serial' });
+test.describe.configure({ mode: 'serial' });
+test.use({storageState: 'swagLabsAuth.json'});
 test.describe('Swag Labs Suite',async ()=>{
       test('Login in the Application',async ({browser})=>{
             const context = await browser.newContext();
@@ -13,14 +14,12 @@ test.describe('Swag Labs Suite',async ()=>{
             const swagLoginPage = new SwagLoginPage();
             await swagLoginPage.load(page);
             await swagLoginPage.userLogin(page,"standard_user","secret_sauce");
+            await page.context().storageState({path: 'swagLabsAuth.json'});
       });
 
       test('Oder product in the Application',async ({page})=>{
-            const swagLoginPage = new SwagLoginPage();
-            await swagLoginPage.load(page);
-            await swagLoginPage.userLogin(page,"standard_user","secret_sauce");
-            
             const swagLabsProductPage = new ProductsPage();
+            await swagLabsProductPage.load(page);
             await swagLabsProductPage.addToCart(page,"Sauce Labs Fleece Jacket");
             await swagLabsProductPage.goToCart(page);
 

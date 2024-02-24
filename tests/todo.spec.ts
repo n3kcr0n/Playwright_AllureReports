@@ -1,23 +1,11 @@
 import { test,expect } from "@playwright/test";
 import CreateToDoPage from "../page-objects/createTodoPage";
-import QaCartRegistrationPage from "../page-objects/qaRegistrationPage";
-import User from "../models/User";
 
-
-
-const testUser:User = new User();
+test.use({storageState: 'qaCartAuth.json'});
 test.describe('Create & Delete To do SUITE',async ()=>{
     test('TS01 _Able to create todo on the list',async ({page})=>{
-        const registrationPage = new QaCartRegistrationPage();
-        await registrationPage.load(page);
-        await registrationPage.registerUser(
-            page,
-            testUser.getFirstname(),
-            testUser.getLasttname(),
-            testUser.getEmail(),
-            testUser.getPassword());
-
         const createTodo = new CreateToDoPage();
+        await createTodo.load(page);
         await createTodo.addTodo(page,'test1');
         expect(await page.locator(createTodo.todoItems).first().textContent()).toEqual('test1');
     });
@@ -26,5 +14,7 @@ test.describe('Create & Delete To do SUITE',async ()=>{
         const createTodo = new CreateToDoPage();
         await createTodo.load(page);
         await createTodo.deleteTodo(page,'test1');
+        expect(await createTodo.validateNoToDo(page)).toBeTruthy();
     });
+
 });
