@@ -1,4 +1,4 @@
-import {Base} from "./Base";
+import Base from "./Base";
 import { Page } from "@playwright/test";
 
 export default class LetCodeWindowsTabs extends Base {

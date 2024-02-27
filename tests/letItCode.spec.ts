@@ -1,6 +1,6 @@
 import {expect, test} from "@playwright/test";
 import User from "../models/User";
-import {PageManager} from '../page-objects/pageManager'
+import PageManager from '../page-objects/pageManager'
 
 
 
