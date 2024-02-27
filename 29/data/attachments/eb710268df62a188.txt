@@ -1,0 +1,5 @@
+201  {
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZGRmYWE1NzM2NGZmMDAxNDVkZjcwZCIsImZpcnN0TmFtZSI6IkJyaXR0YW55IiwibGFzdE5hbWUiOiJSdW50ZSIsImlhdCI6MTcwOTA0NjQzN30.S3rboX2IPAhDKWEZ2MSiWA8njlIO3P3Gm13ivKLjeys",
+    "userID": "65ddfaa57364ff00145df70d",
+    "firstName": "Brittany"
+}

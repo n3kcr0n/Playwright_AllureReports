@@ -1,0 +1,5 @@
+201  {
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZGRmYTRlNzM2NGZmMDAxNDVkZjZkZCIsImZpcnN0TmFtZSI6IkxvdHRpZSIsImxhc3ROYW1lIjoiR3VsZ293c2tpIiwiaWF0IjoxNzA5MDQ2MzUwfQ.zNIxadi0s0I3cfq1jIhBjHKUzvn_Wh7FLHqRgOvO1vA",
+    "userID": "65ddfa4e7364ff00145df6dd",
+    "firstName": "Lottie"
+}
