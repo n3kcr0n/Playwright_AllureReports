@@ -1,0 +1,5 @@
+201  {
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZGUwZTQwNzM2NGZmMDAxNDVkZmE4NCIsImZpcnN0TmFtZSI6IlNhbnRpbmEiLCJsYXN0TmFtZSI6IkRhY2giLCJpYXQiOjE3MDkwNTE0NTZ9.e-kaZp6d_z8eD4dIl9Lszgeq51sCizmT2zLwCIw0t5Y",
+    "userID": "65de0e407364ff00145dfa84",
+    "firstName": "Santina"
+}
