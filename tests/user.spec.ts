@@ -13,12 +13,9 @@ test.describe('User Registration SUITE',async ()=>{
         await registrationPage.registerUser(
             page,
             testUser.getFirstname(),
-            testUser.getLasttname(),
+            testUser.getLastname(),
             testUser.getEmail(),
             testUser.getPassword());
-
-        //saving state 
-        await page.context().storageState({path: 'qaCartAuth.json'});
     });
 });
 

@@ -8,7 +8,7 @@ export default class UserApi{
                 email: user.getEmail(),
                 password: "Test@123",
                 firstName: user.getFirstname(), 
-                lastName: user.getLasttname()
+                lastName: user.getLastname()
             }
         });
         //Extracting from the request response

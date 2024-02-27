@@ -5,6 +5,7 @@ export default class QaCartRegistrationPage{
     //Methods
     load=async(page:Page)=>{
         await page.goto(process.env.QACART_BASEURL+this.url);
+        await page.waitForLoadState('domcontentloaded')
     }
 
     fillRegistrationForm =async(page:Page,firstName:string,lastName:string,email:string,password:string)=>{
@@ -17,11 +18,11 @@ export default class QaCartRegistrationPage{
     
     submitRegistration =async(page:Page)=>{
         await page.locator("button[data-testid='submit']").click();
-        await page.locator("[data-testid=welcome]").waitFor({state:'visible'});
     }
 
     registerUser =async (page:Page,firstName:string,lastName:string,email:string,password:string)=>{
         await this.fillRegistrationForm(page,firstName,lastName,email,password);
         await this.submitRegistration(page);
+        await page.locator("[data-testid=welcome]").waitFor({state:'visible'});
     }
 }

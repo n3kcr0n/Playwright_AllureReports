@@ -36,15 +36,11 @@ export default class CreateToDoPage{
         for(let i = 0;i<items;i++){
             if(await page.locator(this.todoItems).nth(i).textContent() == name){
                 await page.locator(this.toDoDeleteIcon).nth(i).click();
-                this.validateNoToDo(page);
+                await page.getByText('No Available Todos').waitFor({state:'hidden'})
                 break;
             } else {
                 throw new Error("Item not found");
             }
         }
-    }
-
-    validateNoToDo = async (page:Page):Promise<boolean>=>{
-        return await page.getByText('No Available Todos').isVisible();
     }
 }

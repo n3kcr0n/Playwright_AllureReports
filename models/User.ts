@@ -22,7 +22,7 @@ export default class User {
         return this.firstName;
     }
 
-    getLasttname = ():string =>{
+    getLastname = ():string =>{
         return this.lastName;
     }
 

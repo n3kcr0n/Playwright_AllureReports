@@ -10,6 +10,7 @@ export default class LoginPage{
     //Methods
     public async load(page:Page){
         await page.goto(process.env.QACART_BASEURL+this.url);
+        await page.locator(this.emailTextbox).waitFor({state:'visible'})
     }
 
     public async enterEmailAddress(page:Page,email:string){
@@ -29,5 +30,6 @@ export default class LoginPage{
         await this.enterEmailAddress(page,email);
         await this.enterPassword(page,pass);
         await this.clickLogintButton(page);
+        await page.waitForSelector('svg[data-testid="add"]')
     }
 }

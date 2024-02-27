@@ -15,6 +15,8 @@ require('dotenv').config();
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+  timeout: 60000, //test timeout 
+  //globalTimeout: 60000,
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -31,6 +33,8 @@ export default defineConfig({
     /* Base URL to use in actions like `await page.goto('/')`. */
     //baseURL: '',
     //browserName: "chromium",
+    //actionTimeout: 5000, //timeout for actions
+    //navigationTimeout: 60000, //timeout for navigations
     headless:true,   
     screenshot: "on",
     video: "on",

@@ -2,33 +2,33 @@
   "cookies": [
     {
       "name": "access_token",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZDk1OTg4Nzg5MDkzMDAxNGY2YzQxMyIsImZpcnN0TmFtZSI6IkRhcndpbiIsImxhc3ROYW1lIjoiRHVCdXF1ZSIsImlhdCI6MTcwODc0MzA0OH0.vrj8iIyJpJFpqyYjpwBtZO2bs4png-Bb2a5-JunpK04",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZGRlNmIxNzM2NGZmMDAxNDVkZjQ1NyIsImZpcnN0TmFtZSI6IktlZWx5IiwibGFzdE5hbWUiOiJSZW5uZXIiLCJpYXQiOjE3MDkwNDEzMjl9.TdgpwZ_KewQ2FJU8fesEGBkztSneaeMaAYfrQ9naWo8",
       "domain": "todo.qacart.com",
       "path": "/",
       "expires": -1,
       "httpOnly": false,
       "secure": false,
-      "sameSite": "Lax"
+      "sameSite": "None"
     },
     {
       "name": "userID",
-      "value": "j%3A%2265d959887890930014f6c413%22",
+      "value": "j%3A%2265dde6b17364ff00145df457%22",
       "domain": "todo.qacart.com",
       "path": "/",
       "expires": -1,
       "httpOnly": false,
       "secure": false,
-      "sameSite": "Lax"
+      "sameSite": "None"
     },
     {
       "name": "firstName",
-      "value": "Darwin",
+      "value": "Keely",
       "domain": "todo.qacart.com",
       "path": "/",
       "expires": -1,
       "httpOnly": false,
       "secure": false,
-      "sameSite": "Lax"
+      "sameSite": "None"
     }
   ],
   "origins": []
