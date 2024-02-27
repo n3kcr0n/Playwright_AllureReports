@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test";
 
-export default class Base{
+export class Base{
     readonly page:Page;
     constructor(page:Page){
         this.page = page;

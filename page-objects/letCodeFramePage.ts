@@ -1,5 +1,5 @@
 import { Page } from "@playwright/test";
-import Base from "../page-objects/Base";
+import {Base} from "../page-objects/Base";
 
 export default class LetCodeFramePage extends Base{
     constructor(page:Page){
