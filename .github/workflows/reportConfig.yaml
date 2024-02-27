@@ -15,7 +15,7 @@ jobs:
         run: rm package-lock.json
 
       - name: Install packages
-        run: npm i
+        run: npm i -D @types/node
 
       - name: Install dependencies
         run: npm ci
