@@ -1,0 +1,5 @@
+201  {
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZGRmNzMyNzM2NGZmMDAxNDVkZjYwNiIsImZpcnN0TmFtZSI6IkJlYXVsYWgiLCJsYXN0TmFtZSI6IkphY29ic29uIiwiaWF0IjoxNzA5MDQ1NTU0fQ.x8JDV-ba8ylAG_TVG7rtBMcWsI-RxRtT8WJW1H4Ps70",
+    "userID": "65ddf7327364ff00145df606",
+    "firstName": "Beaulah"
+}
