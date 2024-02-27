@@ -10,7 +10,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
+      
+      - name: Remove package-lock
+        run: rm package-lock.json
 
+      - name: Remove node_modules
+        run: rm -r node_modules
+
+      - name: Install packages
+        run: npm i
+        
       - name: Install dependencies
         run: npm ci
 
