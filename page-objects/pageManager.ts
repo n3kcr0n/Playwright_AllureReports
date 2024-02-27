@@ -5,7 +5,7 @@ import LetCodeWindowsTabs from "../page-objects/letCodeWindowsTabsPage";
 import LetCodeFramePage from "../page-objects/letCodeFramePage";
 import LetCodeTablePage from "../page-objects/letCodeTablePage";
 
-export default class PageManager{
+export class PageManager{
     private readonly page:Page;
     private readonly letCodeFormPage:LetCodeFormPage
     private readonly letCodeAlertPage:LetCodeAlertPage
