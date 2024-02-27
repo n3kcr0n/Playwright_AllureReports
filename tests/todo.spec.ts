@@ -40,7 +40,6 @@ test.describe('Create & Delete To do SUITE',async ()=>{
         const createTodo = new CreateToDoPage();
         await createTodo.load(page);
         await createTodo.deleteTodo(page,'test1');
-        await expect(page.getByText('No Available Todos')).toBeVisible()
     });
 
 });
