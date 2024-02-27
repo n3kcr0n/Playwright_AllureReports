@@ -1,5 +1,5 @@
-import Base from "./Base";
 import { Page } from "@playwright/test";
+import Base from "../page-objects/Base";
 
 export default class LetCodeWindowsTabs extends Base {
     constructor(page:Page){
