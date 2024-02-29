@@ -37,7 +37,7 @@ export default defineConfig({
     //navigationTimeout: 60000, //timeout for navigations
     headless:true,   
     screenshot: "on",
-    video: "on",
+    video: 'retain-on-failure',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'retain-on-failure',
   },
